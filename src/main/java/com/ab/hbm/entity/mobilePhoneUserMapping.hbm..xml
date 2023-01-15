@@ -4,7 +4,7 @@
 <hibernate-mapping>
     <class name="com.ab.object.versioning.entity.MobilePhoneUser" table="MobilePhoneUser">
         <id name="regNo"><generator class="increment"/> </id>
-        <property name="updateCount" type="integer"></property> <!--must be after ID tag-->
+        <timestamp name="lastUpdated"/>
         <property name="mobileNo" type="long"></property>
         <property name="mobileNo" type="long"></property>
         <property name="prepaid" type="string" length="20"></property>

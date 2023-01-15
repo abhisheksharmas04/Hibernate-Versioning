@@ -1,18 +1,14 @@
-package com.ab.object.versioning;
+package com.ab.hbm.test;
 
-import com.ab.object.versioning.entity.MobilePhoneUser;
-import com.ab.object.versioning.utility.HibernateUtility;
+import com.ab.hbm.entity.MobilePhoneUser;
+import com.ab.hbm.utility.HibernateUtility;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
-/**
- * Hello world!
- *
- */
-public class App{
-    public static void main( String[] args ){
+public class Test {
+    public static void main(String[] args) {
         SessionFactory sessionFactory = HibernateUtility.getSessionFactory();
         Session session = HibernateUtility.getSession();
 
@@ -45,4 +41,5 @@ public class App{
         }
 
     }
-}
+
+    }

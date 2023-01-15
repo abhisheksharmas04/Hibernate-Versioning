@@ -26,7 +26,7 @@
         </property>
 
         <!-- mapping resource -->
-        <mapping class="com/ab/object/versioning/entity/mobilePhoneUserMapping.xml" />
+        <mapping resource ="com/ab/hbm/entity/mobilePhoneUserMapping.hbm.xml" />
 
     </session-factory>
 </hibernate-configuration>
