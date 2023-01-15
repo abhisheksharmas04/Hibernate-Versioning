@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ab.object.versioning.entity.MobilePhoneUser" table="MobilePhoneUser">
+        <id name="regNo"><generator class="increment"/> </id>
+        <property name="updateCount" type="integer"></property> <!--must be after ID tag-->
+        <property name="mobileNo" type="long"></property>
+        <property name="mobileNo" type="long"></property>
+        <property name="prepaid" type="string" length="20"></property>
+        <property name="circle" type="long"></property>
+        <property name="callerTune" type="long" length="20"></property>
+
+    </class>
+</hibernate-mapping>

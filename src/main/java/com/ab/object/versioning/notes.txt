@@ -1,0 +1,10 @@
+-> This feature of hibernate is used to keep track of how many time object/record is modified through hibernate persistence logic. It will maintain one numeric counter keeping track of that changes.
+
+-> to mark the properties of entity class as the versioning property use <version> tag or @Version annotation and this property type must be numeric type.
+
+-> use case::
+    -> Keeping track of how many times how many times atm service is used
+    -> Keeping track of how many times how many times address or phone number is changed in the bank.
+    -> Also useful locking of the object to prevent simultaneous modification.
+
+-> Bringing this effect without hibernate is possible using JDBC but we need to use the complex triggers support.
